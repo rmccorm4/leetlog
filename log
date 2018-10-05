@@ -1,0 +1,20 @@
+#!/usr/bin/python
+
+# Usage: ./leetlog <problem_number> <problem_difficulty>
+# Output: Creates or appends to running list of solved leetcode problems
+
+import sys
+import datetime
+
+time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+number = sys.argv[1]
+difficulty = sys.argv[2]
+
+if len(sys.argv) < 4:
+	filename = 'leetlog.csv'
+else:
+	filename = sys.argv[3]
+
+with open(filename, 'a') as logfile:
+	output = '{} | {} | {}\n'.format(time, number, difficulty)
+	logfile.write(output)
