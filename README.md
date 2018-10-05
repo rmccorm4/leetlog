@@ -2,7 +2,7 @@
 Simple script to log leetcode problems rather than manually keeping a spreadsheet through Google Docs or Excel
 
 ## Usage
-./log <problem_number> <problem_difficulty>
+`./log <problem_number> <problem_difficulty>`
 
 ## Output
 Appends the following line to `leetlog.csv`:
